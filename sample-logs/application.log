@@ -1,0 +1,65 @@
+2024-01-15 10:00:01 INFO Starting Trading Platform Application v2.5.0
+2024-01-15 10:00:02 INFO Loading configuration from /etc/trading/config.yml
+2024-01-15 10:00:03 INFO Database connection pool initialized with 50 connections
+2024-01-15 10:00:04 INFO Connecting to database: nasdaq-prod-db.internal
+2024-01-15 10:00:05 INFO Successfully connected to database
+2024-01-15 10:00:06 INFO Starting HTTP server on port 8080
+2024-01-15 10:00:07 INFO Application started successfully
+2024-01-15 10:00:15 INFO Received trading request from client: NASDAQ-CLIENT-001
+2024-01-15 10:00:16 DEBUG Processing order: BUY 100 shares of AAPL at $175.50
+2024-01-15 10:00:17 INFO Order executed successfully - Order ID: ORD-2024-001
+2024-01-15 10:00:25 INFO Received trading request from client: NASDAQ-CLIENT-002
+2024-01-15 10:00:26 DEBUG Processing order: SELL 500 shares of GOOGL at $142.30
+2024-01-15 10:00:27 INFO Order executed successfully - Order ID: ORD-2024-002
+2024-01-15 10:00:35 WARN Database connection pool usage at 85% - consider scaling
+2024-01-15 10:00:45 INFO Received trading request from client: NASDAQ-CLIENT-003
+2024-01-15 10:00:46 ERROR Failed to connect to database - connection timeout after 5000ms
+2024-01-15 10:00:46 ERROR Order processing failed for client: NASDAQ-CLIENT-003
+2024-01-15 10:00:47 INFO Retrying database connection...
+2024-01-15 10:00:52 INFO Database connection restored
+2024-01-15 10:00:53 INFO Processing delayed order for NASDAQ-CLIENT-003
+2024-01-15 10:00:54 INFO Order executed successfully - Order ID: ORD-2024-003
+2024-01-15 10:01:00 INFO Memory usage: 2.3GB / 4GB (57%)
+2024-01-15 10:01:15 WARN API response time exceeded 1000ms - Endpoint: /api/v1/orders
+2024-01-15 10:01:30 INFO Received trading request from client: NASDAQ-CLIENT-004
+2024-01-15 10:01:31 DEBUG Processing order: BUY 1000 shares of MSFT at $378.90
+2024-01-15 10:01:32 WARN Market data feed delay detected - 500ms behind real-time
+2024-01-15 10:01:35 INFO Order executed successfully - Order ID: ORD-2024-004
+2024-01-15 10:01:45 ERROR Authentication failed for user: trader@example.com - Invalid credentials
+2024-01-15 10:01:46 WARN Multiple failed login attempts from IP: 192.168.1.100
+2024-01-15 10:02:00 INFO Scheduled backup job started
+2024-01-15 10:02:05 INFO Backup completed successfully - Size: 1.2GB
+2024-01-15 10:02:15 INFO System health check: CPU 45%, Memory 57%, Disk 68%
+2024-01-15 10:02:30 ERROR Exception in order processing: java.lang.NullPointerException at TradingService.java:156
+2024-01-15 10:02:31 ERROR Stack trace: NullPointerException when accessing order.getCustomerId()
+2024-01-15 10:02:32 INFO Sending alert to operations team
+2024-01-15 10:02:45 WARN Connection pool exhausted - waiting for available connection
+2024-01-15 10:02:50 ERROR Database query timeout - Query exceeded 10000ms limit
+2024-01-15 10:02:51 CRITICAL System performance degraded - Immediate attention required
+2024-01-15 10:03:00 INFO Scaling database connection pool to 75 connections
+2024-01-15 10:03:05 INFO Performance restored to normal levels
+2024-01-15 10:03:15 INFO Received trading request from client: NASDAQ-CLIENT-005
+2024-01-15 10:03:16 DEBUG Processing order: BUY 250 shares of TSLA at $242.50
+2024-01-15 10:03:17 INFO Order executed successfully - Order ID: ORD-2024-005
+2024-01-15 10:03:30 WARN Disk usage at 85% - /var/log partition
+2024-01-15 10:03:31 INFO Starting log rotation process
+2024-01-15 10:03:35 INFO Old logs archived to /backup/logs/2024-01-14.tar.gz
+2024-01-15 10:03:36 INFO Disk usage reduced to 70%
+2024-01-15 10:04:00 INFO Hourly metrics: 150 orders processed, avg response time: 234ms
+2024-01-15 10:04:15 INFO Received trading request from client: NASDAQ-CLIENT-006
+2024-01-15 10:04:16 DEBUG Processing order: SELL 300 shares of AMZN at $168.75
+2024-01-15 10:04:17 INFO Order executed successfully - Order ID: ORD-2024-006
+2024-01-15 10:04:30 ERROR Failed to send confirmation email - SMTP server timeout
+2024-01-15 10:04:31 WARN Email notification service degraded
+2024-01-15 10:04:45 INFO Cache hit rate: 92% - Performance optimal
+2024-01-15 10:05:00 INFO WebSocket connections: 45 active clients
+2024-01-15 10:05:15 WARN Memory usage increasing - 3.2GB / 4GB (80%)
+2024-01-15 10:05:16 INFO Triggering garbage collection
+2024-01-15 10:05:20 INFO Garbage collection completed - Memory freed: 450MB
+2024-01-15 10:05:25 INFO Memory usage: 2.8GB / 4GB (70%)
+2024-01-15 10:05:45 INFO Market hours ended - Switching to extended hours mode
+2024-01-15 10:06:00 DEBUG Closing idle database connections
+2024-01-15 10:06:05 INFO Connection pool optimized: 50 active, 25 idle
+2024-01-15 10:06:30 INFO Daily summary generated - Total orders: 5,234
+2024-01-15 10:06:31 INFO Total volume: $12.5M traded
+2024-01-15 10:07:00 INFO Application health: GOOD - All systems operational
